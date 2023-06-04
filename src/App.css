@@ -1,6 +1,18 @@
 :root {
+    --primary-color: #FFFFFF;
+    --secondary-color: #000000;
     --background-color: #171A1F;
     --secondary-background-color: #DEE1E6;
     --primary-orange: #ED7D2D;
     --secondary-orange: #EF9834;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--secondary-background-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
 }

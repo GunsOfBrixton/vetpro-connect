@@ -1,6 +1,6 @@
 import React from 'react'
 import './ContainerUno.css';
-import imagen1 from '../../assets/img/imagen1.jpg';
+import imagen1 from '../../../assets/img/imagen1.jpg';
 
 
 function ContainerUno() {
@@ -9,6 +9,7 @@ function ContainerUno() {
       <h1 className='title'>VetPro Connect</h1>
       <p className='parr'>holaholaaaa</p>
       <a className ='button' href="/">Regístrate</a>
+      <a className ='button' href="/">Inicia Sesión</a>
       <img src={imagen1} className='image' />
     </div>
   )

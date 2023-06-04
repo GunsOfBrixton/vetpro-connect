@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import "./Navbar.css"
 import {Button} from '../Button/Button';
-import logo from '../../assets/img/logo.png';
-import xIcon from '../../assets/icons/x.png';
-import menuIcon from '../../assets/icons/menu.png';
+import logo from '../../../assets/img/logo.png';
+import xIcon from '../../../assets/icons/x.png';
+import menuIcon from '../../../assets/icons/menu.png';
 
 function Navbar() {
  /*  const [click, setClick] = useState(false);
