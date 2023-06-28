@@ -13,24 +13,22 @@ function Clientes({ seleccionadoCliente, seleccionarCliente }) {
 
   return (
     <div className={styles.clientesContainer}>
-        <h1>Clientes</h1>
+        <h2>Listado Clientes/Mascotas</h2>
         <table>
           <thead>
             <tr>
-              <th></th>
-              <th>Cliente</th>
-              <th>Mascota</th>
+              <th className={styles.tabletitle}>Cliente</th>
+              <th className={styles.tabletitle}>Mascota</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className={styles.tbody}>
             {clientes.map((cliente, i) => (
               <tr className={seleccionadoCliente?.id == cliente.id
                 ? styles.rowClienteSeleccionado
                 : ''}
                 onClick={() => seleccionarCliente(cliente)} key={i}>
-                <td>{cliente.foto}</td>
-                <td>{cliente.cliente}</td>
-                <td>{cliente.mascota}</td>
+                <td className={styles.cliente}>{cliente.cliente}</td>
+                <td className={styles.mascota}>{cliente.mascota}</td>
               </tr>
             ))}
           </tbody>

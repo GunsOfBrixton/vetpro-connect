@@ -2,6 +2,8 @@ export const BACKEND_URL = 'http://localhost:5000';
 export const consultarClientes = async () => {
     const url = BACKEND_URL+'/clientes';
     const respuesta = await fetch(url);
+    console.log(respuesta)
+    
     const clientes = await respuesta.json();
     return clientes.map((cliente) => {
         return {
@@ -40,3 +42,17 @@ export const login = async (usuario, contrasena) => {
     const resultado = await respuesta.json();
     return resultado[0];
 };
+
+export const guardarDatosModificados = (datosFormulario) => {
+    return fetch(`${BACKEND_URL}/api/guardar-datos-modificados`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(datosFormulario),
+    })
+      .then((response) => response.json())
+      .catch((error) => {
+        console.error('Error al guardar los datos modificados:', error);
+      });
+  };

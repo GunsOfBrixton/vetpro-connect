@@ -1,12 +1,14 @@
 import React from 'react';
 import Navbar from './Navbar/Navbar';
-import ContainerUno from './ContainerUno/ContainerUno';
+import Page from './Page/Page';
+import Footer from '../Footer/Footer'
 
 function Landing() {
   return (
     <div>
         <Navbar />
-        <ContainerUno />
+        <Page />
+        <Footer />
     </div>
   )
 }

@@ -1,0 +1,71 @@
+.contenido {
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    /* height: 80vh; */
+    padding: 0.2em;
+  }
+
+  .fichasContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        height: 70vh;
+        background-color: #cacaca;
+        padding: 1rem;
+        border-radius: 15px;
+ }
+
+ .tabletitle{
+        background-color: var(--background-color);
+        color: var(--secondary-orange);
+        padding: 10px;
+        width: 220px;
+        text-align: left;
+      }
+
+      .tbody{
+  background-color: white;
+  text-decoration: none;
+}
+
+.documento {
+        padding: 10px;
+      }
+      .acciones {
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+.button {
+        min-height: 50px;
+        padding: .5em 1em;
+        border: 1px;
+        border-radius: 6px;
+        background-color: var(--primary-orange);
+        color: #fff;
+        font-size: 15px;
+        cursor: pointer;
+        transition: background-color .3s ease-in-out;
+        align-self: left;
+        margin-top: 50px;
+      }
+      
+      .button:hover {
+        background-color: var(--secondary-orange);
+      }
+      
+      .filaSeleccionada{
+        background-color: var(--secondary-orange);
+        color: white;
+      }
+
+      .parr{
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+      }

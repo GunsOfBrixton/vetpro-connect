@@ -1,0 +1,86 @@
+.contenido {
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.userContainer {
+  display: flex;
+  flex-direction: column;
+  width: 38%;
+  height: 70vh;
+  background-color: var(--secondary-background-color);
+  padding: 1rem;
+  border-radius: 15px;
+}
+.agendaContainer {
+  align-items: center;
+  border-radius: 15px;
+  width: 50%;
+  height: 70vh;
+  background-color: #cacaca;
+  padding: 1rem;
+}
+
+.title{
+  text-align: left;
+  color: var(--background-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.parra{
+  text-align: justify;
+}
+
+.parraf{
+  text-align: left;
+}
+
+.cont1{
+  display: grid;
+  background-color: var(--background-color);
+  grid-template-columns: 1fr 1fr;
+  border-radius: 5px;
+}
+
+.subcont1{
+  width:max-content;
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 1;
+}
+
+.subcont2{
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 2;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+
+.subtitle1{
+  color: white ;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  padding: 1vh
+}
+
+.fecha{
+  color: var(--secondary-orange);
+  grid-column-start: 1;
+  grid-column-end: 1;
+  font-size: 20px;
+  padding: 1vh;
+}
+
+.info{
+  color: white;
+  align-self: center;
+  text-align: center;
+  font-size: 15px;
+}
+

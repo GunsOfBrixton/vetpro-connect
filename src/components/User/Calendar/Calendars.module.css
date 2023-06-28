@@ -1,0 +1,105 @@
+.calendar{
+  border-radius:5px;
+  box-shadow:0px 40px 30px -20px rgba(0,0,0,0.3);
+}
+  
+  ul {list-style-type: none;}
+  body {font-family: Verdana, sans-serif;}
+  
+  /* Month header */
+  .month {
+    padding: 20px;
+    background: var(--secondary-orange);
+    text-align: center;
+  }
+  
+  /* Month list */
+  .month ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  /* Previous button inside month header */
+  .month .prev {
+    float: left;
+  }
+  
+  /* Next button */
+  .month .next {
+    float: right;
+  }
+  
+  /* Weekdays (Mon-Sun) */
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: var(--background-color);
+  }
+  
+  .weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Days (1-31) */
+  .days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+  }
+
+  .days :hover{
+    background:var(--background-color);
+  }
+  
+.days :focus{
+    background:var(--secondary-orange);
+    color: white;
+    font-weight:600;
+  }
+  
+  
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+    cursor:pointer;
+    transition-duration:.2s;
+    
+  }
+  
+  /* Highlight the "current" day */
+  .days li .active {
+    padding: 5px;
+    background:  var(--secondary-orange);
+    color: white !important
+  }
+
+  .button{
+    cursor:pointer;
+    outline:0;
+    border:0;
+    background:transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size:16px;
+    justify-self:center;
+    align-self:center;
+    width:50px;
+    height:50px;
+    border-radius:50px;
+    margin:2px;
+    transition-duration:.2s;
+}

@@ -1,13 +1,21 @@
 .navbar {
   display: flex;
   align-items: center;
-  gap: 1rem;
   width: 100%;
   height: 10vh;
-  background-color: #1a1a1a;
+  background-color: var(--secondary-background-color);
   color: white;
 }
 
+.navbarItem{
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background-color: var(--secondary-orange);
+  margin-left: 5vh;
+  padding: 2vh;
+}
 .contenido {
   color: #1a1a1a;
   display: flex;
@@ -15,7 +23,16 @@
   justify-content: space-evenly;
   width: 100%;
   /* height: 80vh; */
-  padding: 2rem;
+  padding: 0.2em;
+}
+
+
+.tabletitle{
+  background-color: var(--background-color);
+  color: var(--secondary-orange);
+  padding: 10px;
+  width: 220px;
+  text-align: left;
 }
 
 .clientesContainer {
@@ -23,21 +40,133 @@
   flex-direction: column;
   align-items: center;
   width: 40%;
-  height: 80vh;
-  background-color: #cacaca;
+  height: 70vh;
+  background-color: var(--secondary-background-color);
   padding: 1rem;
+  border-radius: 15px;
 }
 
-.rowClienteSeleccionado {
-  background-color: red;
+.filaSeleccionada{
+  background-color: var(--secondary-orange);
+  color: white;
 }
+.rowClienteSeleccionado {
+  background-color: var(--secondary-orange);
+  color: white;
+}
+
+.tbody{
+  background-color: white;
+  text-decoration: none;
+}
+
+.profiles {
+  padding: 10px;
+}
+.cliente {
+  padding: 10px;
+}
+.mascota {
+  padding: 10px;
+}
+.checkbox {
+  padding: 10px;
+}
+.documento {
+  padding: 10px;
+}
+.acciones {
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.download{
+  color:  var(--secondary-orange);
+  justify-content: center;
+}
+
+.download:hover {
+  color: var(--secondary-orange);
+}
+.button {
+  min-height: 50px;
+  padding: .5em 1em;
+  border: 1px;
+  border-radius: 6px;
+  background-color: var(--primary-orange);
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+  align-self: left;
+  margin-top: 50px;
+}
+
+.button:hover {
+  background-color: var(--secondary-orange);
+}
+
 
 .documentosContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 40%;
-  height: 80vh;
+  height: 70vh;
   background-color: #cacaca;
   padding: 1rem;
+  border-radius: 15px;
 }
+
+
+
+.radioInputs {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  background-color: var(--secondary-orange);
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  width: 300px;
+  font-size: 14px;
+  margin-left: 67px;
+
+}
+
+.radioInputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+  margin: 1px;
+}
+
+.radioInputs .radio input {
+  display: none;
+}
+
+.radioInputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  padding: .5rem 0;
+  color: var(--background-color);
+  transition: all .15s ease-in-out;
+}
+
+.radioInputs .radio input:checked + .name {
+  background-color: #fff;
+  font-weight: 600;
+}
+
+.formulario{
+  position: absolute;
+}
+
+
+
+
+

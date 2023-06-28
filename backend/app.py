@@ -8,10 +8,12 @@ app.config["CORS_HEADERS"] = "Content-Type: application/json"
 
 # Required
 app.config["MYSQL_USER"] = "root"
-app.config["MYSQL_PASSWORD"] = "291092sas"
-app.config["MYSQL_DB"] = "vetpro"
+app.config["MYSQL_PASSWORD"] = ""
+app.config["MYSQL_DB"] = "vet"
+app.config["MYSQL_PORT"] = 3306
 
 # Extra configs, optional:
+
 #app.config["MYSQL_CURSORCLASS"] = "DictCursor"
 #app.config["MYSQL_CUSTOM_OPTIONS"] = {"ssl": {"ca": "/path/to/ca-file"}}  # https://mysqlclient.readthedocs.io/user_guide.html#functions-and-attributes
 
@@ -48,7 +50,6 @@ def login():
 @cross_origin()
 def media(path):
     return send_from_directory('media', path)
-
 
 if __name__ == "__main__":
     app.run(debug=True)
