@@ -84,3 +84,31 @@
   font-size: 15px;
 }
 
+.selectedday{
+  padding: 1em;
+  color: var(--secondary-orange);
+  background-color: #1a1a1a;
+  margin-top: 10px;
+}
+
+.button {
+  min-height: 50px;
+  padding: .5em 1em;
+  border: 1px;
+  border-radius: 6px;
+  background-color: var(--primary-orange);
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+  align-self: left;
+}
+
+.button:hover {
+  background-color: var(--secondary-orange);
+}
+
+.calendar{
+  max-width: min-content;
+  justify-self: center;
+}

@@ -50,10 +50,19 @@ function User() {
         <div className={style.agendaContainer}>
           <h2 className={style.title}>Agenda una atención</h2>
           <p className={style.parraf}>Selecciona un día del calendario para agendar tu atención</p>
-          <Calendars/>
-          <div>
-
+{/*           <Calendars/> */}
+          <div className={style.calendar}>
+            <label htmlFor="dia"></label>
+            <input type="date" id="dia" name="dia" />
           </div>
+          <div className={style.selectedday}> Función "Día seleccionado"</div>
+          <div>
+            <p className={style.parraf}>¿Qué servicio deseas agendar?</p>
+            <p className={style.parraf}>¿Con qué profesional deseas agendar?</p>
+            <p className={style.parraf}>Selecciona un horario disponible</p>
+            <p className={style.parraf}>Nombre de la mascota</p>
+          </div>
+          <button className={style.button}>Agendar cita</button>
         </div>
       </div>
       </div>
